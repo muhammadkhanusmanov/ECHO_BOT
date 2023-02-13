@@ -12,7 +12,7 @@ app = Flask(__name__)
 def api():
     data=request.get_json(force=True)
     output = {'message':'Hello World'}
-    chat_id= 5032606464
+    chat_id = 5032606464
     bot.sendMessage(chat_id,text=output)
     return jsonify(output)
 
